@@ -1,6 +1,6 @@
 # 384well_Sean
 This script is only for converting a 384-well data sheet into several individual data sheets with R 
-# essential packages
+# Essential packages
 1. Xmisc
 2. xlsx
 3. readxl
