@@ -8,7 +8,8 @@ This script is only for converting a 384-well data sheet into several individual
 # Before running the script, please make sure 'Rscript' can be run in cmd mode.
 If you do know how to creat the path in your cmd environemnt, please look up the link below. 
 https://www.architectryan.com/2018/08/31/how-to-change-environment-variables-on-windows-10/ (For windows 10)
-
+or type below in the cmd
+PATH=%PATH%;C:\Program Files\R\R-3.6.3\bin (change the path if needed)
 # How to use
 1. download the script
 2. open the 'cmd'
