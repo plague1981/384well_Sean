@@ -17,12 +17,12 @@ PATH=%PATH%;C:\Program Files\R\R-3.6.3\bin (change the path if needed)
 4. run the script by typing 'Rscript 384wells.R'
 The script will loop through all xlsx files in the current or seleted directory.
 
-For example:
+For example, \
 c:\username\Rscript 384wells.R
 
-For selecting xlsx files in another directory, 
+For selecting xlsx files in another directory, \
 c:\username\Rscript 384wells.R --dir=PATH  
 PATH= the path of the directory
 
-For help,
+For help, \
 c:\username\Rscript 384wells.R -h
