@@ -10,17 +10,18 @@ If you do know how to creat the path in your cmd environemnt, please look up the
 https://www.architectryan.com/2018/08/31/how-to-change-environment-variables-on-windows-10/ (For windows 10)
 
 # How to use
-1. open the 'cmd'
-2. go to the directory containing the script.
-3. run the script by typing 'Rscript Sean.R'
+1. download the script
+2. open the 'cmd'
+3. go to the directory containing the script.
+4. run the script by typing 'Rscript 384wells.R'
 The script will loop through all xlsx files in the current or seleted directory.
 
 For example:
-c:\Sean\Rscript Sean.R
+c:\username\Rscript 384wells.R
 
 For selecting xlsx files in another directory, 
-c:\Sean\Rscript Sean.R --dir=PATH  
+c:\username\Rscript 384wells.R --dir=PATH  
 PATH= the path of the directory
 
 For help,
-c:\Sean\Rscript Sean.R -h
+c:\username\Rscript 384wells.R -h
