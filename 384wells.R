@@ -1,8 +1,9 @@
 # ===== export R PATH before running the script; Skip if it has been done====
 # open cmd mode and enter set PATH=%PATH%;C:\Program Files\R\R-3.6.3\bin (change the path if needed)
 # === Packages ====
-if("Xmisc" %in% rownames(installed.packages()) == FALSE) {install.packages("Xmisc")}
-library(Xmisc)
+if("Xmisc" %in% rownames(installed.packages()) == TRUE) {
+  library(Xmisc)
+} else install.packages(Xmisc)
 if (check.packages(readxl)){
   library(readxl)
 } else install.packages(readxl)
