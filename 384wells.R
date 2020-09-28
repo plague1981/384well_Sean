@@ -1,6 +1,7 @@
 # ===== export R PATH before running the script; Skip if it has been done====
 # open cmd mode and enter set PATH=%PATH%;C:\Program Files\R\R-3.6.3\bin (change the path if needed)
 # === Packages ====
+if("Xmisc" %in% rownames(installed.packages()) == FALSE) {install.packages("Xmisc")}
 library(Xmisc)
 if (check.packages(readxl)){
   library(readxl)
@@ -88,7 +89,7 @@ for (f in 1:length(xlsx.files)){
     file.remove('temp.R')
   }
 
-  # export data to the original xlsx file
+  # export data (xlsx files) into the "Results" fold
   setwd(export_dir)
   for (n in 1:length(sheet_names)){
     
