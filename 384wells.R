@@ -13,7 +13,7 @@ if (check.packages(xlsx)){
 require(methods)
 # === setting environment ===
 parser <- ArgumentParser$new()
-parser$add_usage('Sean.R [options]')
+parser$add_usage('384wells.R [options]')
 parser$add_description('An executable R script parsing arguments from Unix-like command line.')
 parser$add_argument('--h',type='logical', action='store_true', help='Print the help page')
 parser$add_argument('--help',type='logical',action='store_true',help='Print the help page')
