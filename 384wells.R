@@ -1,15 +1,13 @@
-# ===== export R PATH before running the script; Skip if it has been done====
-# open cmd mode and enter set PATH=%PATH%;C:\Program Files\R\R-3.6.3\bin (change the path if needed)
 # === Packages ====
-if("Xmisc" %in% rownames(installed.packages()) == TRUE) {
-  library(Xmisc)
-} else install.packages(Xmisc)
-if (check.packages(readxl)){
-  library(readxl)
-} else install.packages(readxl)
-if (check.packages(xlsx)){
-  library(xlsx)
-} else install.packages(xlsx)
+if("Xmisc" %in% rownames(installed.packages()) == FALSE) {
+  install.packages(Xmisc)}
+if (!check.packages(readxl)){
+  install.packages(readxl)}  
+if (!check.packages(xlsx)){
+  install.packages(xlsx)}
+library(Xmisc)
+library(readxl)
+library(xlsx)
 require(methods)
 # === setting environment ===
 parser <- ArgumentParser$new()
@@ -90,7 +88,7 @@ for (f in 1:length(xlsx.files)){
     file.remove('temp.R')
   }
 
-  # export data (xlsx files) into the "Results" fold
+  # export data to the original xlsx file
   setwd(export_dir)
   for (n in 1:length(sheet_names)){
     
